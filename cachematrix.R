@@ -1,6 +1,6 @@
 # These functions will get a square matrix and cache it in makeCacheMatrix, then get it and calculate the inverseinverse.gaussian()
 
-## This function will get a matrix,inverse it  and set it (cache it).  
+## This function is a group of set and get functions, I think the first set has no real usage but just a concept, otherwise this function works in conjunction with the next function to get or set matrix or its inverse  
 
 makeCacheMatrix <- function(x = matrix()) {
       makeCacheMatrix <- function(x = matrix()) {
@@ -16,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()) {
       }
 }
 
+makeCacheMatrix(matrix)
 
 ## this function will calculate the inverse of a matrix, however if it found it already calculated and in the enviroment it will get the value from the cache
 
@@ -32,3 +33,7 @@ cacheSolve <- function(x, ...) {
             m
       }
 }
+
+
+
+
